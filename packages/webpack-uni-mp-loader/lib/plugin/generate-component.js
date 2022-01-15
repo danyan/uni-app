@@ -93,6 +93,7 @@ module.exports = function generateComponent (compilation, jsonpFunction = 'webpa
           }
 
           moduleId = findComponentModuleId(modules, concatenatedModules, resource, altResource)
+          console.log(moduid)
         } else {
           const resource = removeExt(path.resolve(process.env.UNI_INPUT_DIR, name))
           moduleId = findComponentModuleId(modules, concatenatedModules, resource)

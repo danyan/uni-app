@@ -120,6 +120,7 @@ createPage(Page)
           resolved)))
         // 非页面组件才需要 dynamic import
         if (!process.UNI_ENTRY[component.source]) {
+          console.log('--------------  *********')
           dynamicImports[source] = {
             identifier: component.value,
             chunkName: component.source,
